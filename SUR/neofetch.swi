@@ -1,0 +1,3 @@
+import os
+# Simple python script to run neofetch but rainbow and goes back to the swing shell.
+os.system('neofetch | lolcat && cd .. && python3 shell.py')
