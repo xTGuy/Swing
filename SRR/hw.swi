@@ -1,5 +1,0 @@
-import os
-
-# It's the normal 'Hello, World!' thingy.
-os.system("echo Hello, World! | lolcat")
-os.system("cd .. && python3 shell.py")
