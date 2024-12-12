@@ -1,0 +1,1 @@
+exec cd .swing && python3 shell.py
