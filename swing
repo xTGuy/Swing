@@ -1,1 +1,2 @@
-exec cd .swing && python3 shell.py
+cd swing-files
+exec python3 shell.py

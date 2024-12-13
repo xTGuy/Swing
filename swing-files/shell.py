@@ -12,37 +12,29 @@ import os
 # ----------------------- #
 
 exec = input('>> ')
+
 # ----------------------- #
-# Swing Packages          #
+# SUR Package Manager     #
 # ----------------------- #
 
-# Put a URL or Directory tree here to add a swing package.
-# e.g \/
-# if exec == '<PKGNAME>':
-#    os.system('cd <DIR> && <PKGNAME>.swi')
-
-# SUR ARG Tree
-    # No ARGs
 if exec == 'sur':
-    surpkg = input('Run Which PKG? | >> ')
-    os.system('cd SUR && python3 ' + surpkg + '.swi')
-    # ARG - Get
-if exec == 'sur -S':
-    surget = input('Get Which PKG? | >> ')
+    surget = input('Get Which Package? / SUR | >> ')
     os.system('cd SUR && wget https://raw.githubusercontent.com/xTguy/Swing/main/SUR/' + surget + '.swi && cd .. && python3 shell.py')
-# End -------------
-
-# Linux ARG Tree
-    # No ARGs
-if exec == 'linux':
-    print('To go back, type ./swing in the /~ Directory.')
+elif exec == 'help':
+    print('Help:')
+    print('>> sur / Get Which Package? / SUR | >> <PKGNAME> || >> exit / <TERMINAL> || >> load / Load Which Package? | SUR >> <PKGNAME>')
+    os.system('python3 shell.py')
+elif exec == 'exit':
     quit()
-    # Temp ARG
-if exec == 'linux -t':
-    lexec = input('Linux | >> ')
-    if lexec == '05n82c785n2045987n304n958c709850v987n05983':
-        os.system('echo HOW?????? | lolcat')
-    else:
-        os.system(lexec + ' && python3 shell.py')
-        os.system('cd ~/.swing && python3 shell.py && echo Invalid Linux Command. | lolcat')
-# End -------------
+elif exec == 'load':
+    load = input('Load Which Package? / SUR | >> ')
+    os.system('cd SUR && python3 '+ load + '.sur')
+else:
+    print('Swing: Illegal Input.')
+    os.system('python3 shell.py')
+
+# ----------------------- #
+# Credits                 #
+# ----------------------- #
+
+
