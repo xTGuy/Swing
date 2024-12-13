@@ -19,7 +19,7 @@ exec = input('>> ')
 
 if exec == 'sur':
     surget = input('Get Which Package? / SUR | >> ')
-    os.system('cd SUR && wget https://raw.githubusercontent.com/xTguy/Swing/repo/SUR/' + surget + '.swi && cd .. && python3 shell.py')
+    os.system('cd SUR && wget https://raw.githubusercontent.com/xTguy/Swing/repo/SUR/' + surget + '.sur && cd .. && python3 shell.py')
 elif exec == 'help':
     print('Help:')
     print('>> sur / Get Which Package? / SUR | >> <PKGNAME> || >> exit / <TERMINAL> || >> load / Load Which Package? | SUR >> <PKGNAME>')
